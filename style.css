@@ -1,0 +1,157 @@
+body {
+  background: #0d192c;
+}
+
+.card {
+  /* position: absolute; */
+  margin: auto;
+  width: 350px;
+  height: 596px;
+  /* left: 545px;
+  top: 152px; */
+  border-radius: 8px;
+  margin-top: 8%;
+  background: #15263f;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+}
+
+.topPic {
+  width: 302px;
+  height: 302px;
+  margin-top: 5%;
+  margin-left: 6%;
+  border-radius: 8px;
+}
+
+.quil {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 21px;
+}
+
+.calm {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #8bacd9;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.timer {
+  width: 301px;
+  height: 30px;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
+.diamond {
+  margin-top: 5px;
+  float: left;
+}
+
+.eth {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #00fff8;
+  margin-top: 4px;
+  text-align: right;
+  float: left;
+  margin-left: 5px;
+}
+
+.clock {
+  float: left;
+  margin-top: 6.5px;
+  margin-left: 120px;
+}
+
+.days {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Soft Blue */
+
+  color: #8bacd9;
+  float: right;
+  margin-top: 5px;
+}
+
+.line {
+  width: 302px;
+  height: 1px;
+
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #2e405a;
+}
+
+.create {
+  width: 230px;
+  height: 33px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.avatar {
+  width: 33px;
+  height: 33px;
+  float: left;
+}
+
+.creation {
+  width: 181px;
+  height: 20px;
+  margin-top: 4px;
+  margin-left: 35px;
+}
+
+.of {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8bacd9;
+  float: left;
+}
+
+.jules {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  float: right;
+  color: #ffffff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #00fff8;
+  margin-top: 1%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration:none;
+}
