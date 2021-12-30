@@ -1,159 +1,224 @@
 body {
+  display: flex;
+  flex-direction: column;
   background: #0d192c;
+  align-items: center;
+  font-family: Outfit;
 }
-
-.card {
-  /* position: absolute; */
-  margin: auto;
+/* Cards */
+.card-container {
   width: 350px;
   height: 596px;
-  /* left: 545px;
-  top: 152px; */
   border-radius: 8px;
-  margin-top: 8%;
+  margin-top: 30%;
+  padding-top: 30px;
   background: #15263f;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
   border-radius: 15px;
+  flex-direction: column;
 }
-
-.topPic {
-  width: 302px;
-  height: 302px;
-  margin-top: 5%;
-  margin-left: 6%;
+/* Main Card */
+.card {
+  width: 350px;
+  height: 596px;
+  border-radius: 8px;
+  flex-direction: column;
   border-radius: 8px;
 }
 
-.quil {
-  font-family: Outfit;
+/* Attribution Card */
+.card2 {
+  width: 350px;
+  border-radius: 8px;
+  padding-top: 15px;
+  text-align: center;
+  flex-direction: row;
+}
+
+/* Cards End */
+
+/* Pics */
+.pic-container {
+  position: relative;
+  width: 302px;
+  height: 302px;
+  flex-direction: row;
+  margin-left: 25px;
+  border-radius: 8px;
+}
+
+.topPic .img1 {
+  position: absolute;
+  width: 302px;
+  height: 302px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  transition: 1s ease;
+  opacity: 0;
+  padding-top: 45%;
+  padding-bottom: 38%;
+  padding-right: 42%;
+  padding-left: 42%;
+  border-radius: 8px;
+}
+
+.pic-container:hover {
+  background-color: cyan;
+}
+
+.pic-container:hover .overlay {
+  opacity: 0.5;
+  background-color: cyan;
+  cursor: pointer;
+}
+
+/* Pics End */
+
+/* Equilibrium Row */
+h1 {
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 28px;
-  color: #ffffff;
-  margin-top: 10px;
-  margin-left: 21px;
+  color: white;
+  padding-left: 25px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.01ex;
+  -webkit-text-stroke-color: black;
 }
 
-.calm {
-  font-family: Outfit;
-  font-style: normal;
+h1:hover {
+  color: cyan;
+  -webkit-text-stroke-color: cyan;
+}
+/* Equilibrium Row End */
+
+/* Calm Row */
+h2 {
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
   color: #8bacd9;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-right: 5px;
+  padding-left: 25px;
 }
+/* Calm Row End */
 
-.timer {
+/* Diamond and Clock Row  */
+.time-container {
+  margin: auto;
+  top: 0%;
   width: 301px;
-  height: 30px;
-  margin-top: 18px;
-  margin-left: 20px;
+  height: 20px;
 }
 
 .diamond {
-  margin-top: 5px;
+  flex-direction: column;
   float: left;
 }
 
-.eth {
-  font-family: Outfit;
-  font-style: normal;
+.numbers {
+  flex-direction: column;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #00fff8;
-  margin-top: 4px;
-  text-align: right;
+  color: cyan;
+  padding-left: 5px;
+  padding-right: 110px;
+
   float: left;
-  margin-left: 5px;
 }
 
 .clock {
-  float: left;
-  margin-top: 6.5px;
-  margin-left: 120px;
+  flex-direction: column;
+  padding-top: 2px;
 }
 
-.days {
-  font-family: Outfit;
-  font-style: normal;
+.clock .days {
+  float: right;
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
-
-  /* Soft Blue */
-
+  line-height: 17px;
   color: #8bacd9;
-  float: right;
-  margin-top: 5px;
 }
+/* Diamond and Clock Row End  */
 
+/* Line Row  */
 .line {
   width: 302px;
-  height: 1px;
-
-  margin-top: 20px;
+  height: 0.5px;
+  background-color: #2e405a;
+  margin-top: 40px;
+  border: solid #2e405a 0.5px;
+  flex-direction: row;
   margin-left: 20px;
-  background: #2e405a;
 }
+/* Line Row End */
 
-.create {
-  width: 230px;
+/* Creation Row */
+.creation-container {
+  flex-direction: row;
+  width: 300px;
   height: 33px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 20px;
 }
 
 .avatar {
+  flex-direction: column;
   width: 33px;
   height: 33px;
+  border-radius: 100%;
   float: left;
+}
+
+.avatar img {
+  width: 33px;
+  height: 33px;
 }
 
 .creation {
-  width: 181px;
-  height: 20px;
-  margin-top: 4px;
-  margin-left: 35px;
-}
-
-.of {
-  font-family: Outfit;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #8bacd9;
+  padding-top: 5px;
+  margin-left: 5px;
   float: left;
-  padding-top: 3px;
 }
 
 .jules {
-  font-family: Outfit;
-  font-style: normal;
-  font-weight: normal;
+  float: right;
+  padding-top: 5px;
+  margin-right: 80px;
   font-size: 16px;
   line-height: 20px;
-  float: right;
   color: #ffffff;
-  padding-top: 3px;
+  cursor: pointer;
 }
 
+.jules:hover {
+  color: cyan;
+}
+
+/* Creation Row End */
+
+/* Attribution Card */
 .attribution {
-  font-size: 11px;
-  text-align: center;
-  color: #00fff8;
-  margin-top: 1%;
+  color: #8bacd9;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-a {
-  color: #FFFFFF;
-  text-decoration:none;
+a:hover {
+  color: cyan;
 }
+/* Attribution Card End */
